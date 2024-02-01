@@ -9,7 +9,12 @@ export const router = createRouter({
                 path:"landing",
                 name:"landing",
                 component:() => import("@/pages/LandingPage.vue")
-            }
+            },
+            {
+              path:"trimester-satu",
+              name:"tmsatu",
+              component:() => import("@/pages/BlogTm1.vue")
+          }
         ]
       }
     ],
