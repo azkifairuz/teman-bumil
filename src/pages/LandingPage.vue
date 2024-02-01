@@ -6,10 +6,42 @@
       </div>
       <img 
         class="w-[500px]"
-        src="../assets/hero_image.png" 
+        src="@/assets/hero_image.png" 
         alt=""
       >
+    </div>
+    <div class="w-full content-center justify-items-center grid grid-cols-3">
+        <CardTrimester
+          v-for="items in trimesterData"
+          :key="items.trimester"
+          :trimester="items.trimester"
+          :weeks="items.weeks"
+          :ilustrasi="items.ilustrasi"
+        />
     </div>
   </main>
 
 </template>
+
+<script setup>
+import tm1 from '@/assets/tm1.png'
+import CardTrimester from '../components/CardTrimester.vue';
+
+const trimesterData = [
+  {
+    trimester:"1",
+    weeks:"0-12",
+    ilustrasi:tm1
+  },
+  {
+    trimester:"2",
+    weeks:"13-26",
+    ilustrasi:tm1
+  },
+  {
+    trimester:"3",
+    weeks:"27-36",
+    ilustrasi:tm1
+  },
+]
+</script>
