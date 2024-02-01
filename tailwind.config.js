@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors:{
+        'primary':'#dd2d4a'
+      },
       fontFamily:{
         'poppins':['Poppins', 'sans-serif']
       }
