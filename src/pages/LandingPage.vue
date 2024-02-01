@@ -10,6 +10,7 @@
         alt=""
       >
     </div>
+    <h1 class="text-3xl text-center py-5 font-bold font-poppins">Pilih trimester anda saat ini</h1>
     <div class="w-full content-center justify-items-center grid grid-cols-3">
         <CardTrimester
           v-for="items in trimesterData"
@@ -25,6 +26,8 @@
 
 <script setup>
 import tm1 from '@/assets/tm1.png'
+import tm2 from '@/assets/tm2.png'
+import tm3 from '@/assets/tm3.png'
 import CardTrimester from '../components/CardTrimester.vue';
 
 const trimesterData = [
@@ -36,12 +39,12 @@ const trimesterData = [
   {
     trimester:"2",
     weeks:"13-26",
-    ilustrasi:tm1
+    ilustrasi:tm2
   },
   {
     trimester:"3",
     weeks:"27-36",
-    ilustrasi:tm1
+    ilustrasi:tm3
   },
 ]
 </script>
