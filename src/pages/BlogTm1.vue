@@ -1,5 +1,5 @@
 <template>
-  <body class="p-6 h-screen">
+  <body class="p-6 ">
     <TextTemplateVue
       header="Trimester Satu"
       content="Trimester pertama kehamilan adalah tiga bulan pertama kehamilan yang
