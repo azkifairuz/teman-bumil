@@ -25,6 +25,11 @@ export const router = createRouter({
           name: "tmtiga",
           component: () => import("@/pages/BlogTm3.vue"),
         },
+        {
+          path: "/tahapan/:idTahapan",
+          name: "tahapan",
+          component: () => import("@/pages/Tahapan.vue"),
+        },
       ],
   //   },
   // ],
